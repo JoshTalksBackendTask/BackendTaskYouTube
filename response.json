@@ -1,0 +1,22 @@
+{
+    "kind": "youtube#videoListResponse",
+    "etag": "7AcM0gieIlJihusUkOCm6KHhcQ4",
+    "items": [
+        {
+            "kind": "youtube#video",
+            "etag": "9HNkVL81MJtYiHIn1NSkVhad0fg",
+            "id": "jNQXAC9IVRw",
+            "statistics": {
+                "viewCount": "202986104",
+                "likeCount": "10181900",
+                "dislikeCount": "225510",
+                "favoriteCount": "0",
+                "commentCount": "10961121"
+            }
+        }
+    ],
+    "pageInfo": {
+        "totalResults": 1,
+        "resultsPerPage": 1
+    }
+}

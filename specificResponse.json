@@ -1,0 +1,68 @@
+{
+    "kind": "youtube#videoListResponse",
+    "etag": "tAq4Vk9IhKv5yGErDFbBnQ_lg4Q",
+    "items": [
+        {
+            "kind": "youtube#video",
+            "etag": "0TM2adBMmpjIuXiLgDNzfVn5LFo",
+            "id": "jNQXAC9IVRw",
+            "snippet": {
+                "publishedAt": "2005-04-24T03: 31: 52Z",
+                "channelId": "UC4QobU6STFB0P71PMvOGN5A",
+                "title": "Me at the zoo",
+                "description": "Watching Matt Koval's announcement about the removal of dislikes, I thought something was off.\nThe spoken words did not match the eyes. The video reminded me of an interview Admiral Jeremiah Denton gave in 1966. I have never seen a less enthusiastic, more reluctant announcement of something that is supposed to be great.\n\nCalling the removal of dislikes a good thing for creators cannot be done without conflict by someone holding the title of 'YouTube's Creator Liaison'. We know this because there exists not a single YouTube Creator who thinks removing dislikes is a good idea -- for YouTube or for Creators.\n\nWhy would YouTube make this universally disliked change? There is a reason, but it's not a good one, and not one that will be publicly disclosed. Instead, there will be references to various studies. Studies that apparently contradict the common sense of every YouTuber.\n\nThe ability to easily and quickly identify bad content is an essential feature of a user-generated content platform. Why? Because not all user-generated content is good. It can't be. In fact, most of it is not good. And that's OK. The idea was never that all content is good. The idea WAS, however, that among the flood of content, there are great creations waiting to be exposed. And for that to happen, the stuff that's not great has to fall by the side as quickly as possible.\n\nThe process works, and there's a name for it: the wisdom of the crowds. The process breaks when the platform interferes with it. Then, the platform invariably declines. Does YouTube want to become a place where everything is mediocre? Because nothing can be great if nothing is bad.\n\nIn business, there's only one thing more important than 'Make it better'. And that's 'Don't fuck it up'.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https: //i.ytimg.com/vi/jNQXAC9IVRw/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/jNQXAC9IVRw/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https: //i.ytimg.com/vi/jNQXAC9IVRw/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "jawed",
+                "tags": [
+                    "me at the zoo",
+                    "jawed karim",
+                    "first youtube video"
+                ],
+                "categoryId": "1",
+                "liveBroadcastContent": "none",
+                "defaultLanguage": "en",
+                "localized": {
+                    "title": "Me at the zoo",
+                    "description": "Watching Matt Koval's announcement about the removal of dislikes, I thought something was off.\nThe spoken words did not match the eyes. The video reminded me of an interview Admiral Jeremiah Denton gave in 1966. I have never seen a less enthusiastic, more reluctant announcement of something that is supposed to be great.\n\nCalling the removal of dislikes a good thing for creators cannot be done without conflict by someone holding the title of 'YouTube's Creator Liaison'. We know this because there exists not a single YouTube Creator who thinks removing dislikes is a good idea -- for YouTube or for Creators.\n\nWhy would YouTube make this universally disliked change? There is a reason, but it's not a good one, and not one that will be publicly disclosed. Instead, there will be references to various studies. Studies that apparently contradict the common sense of every YouTuber.\n\nThe ability to easily and quickly identify bad content is an essential feature of a user-generated content platform. Why? Because not all user-generated content is good. It can't be. In fact, most of it is not good. And that's OK. The idea was never that all content is good. The idea WAS, however, that among the flood of content, there are great creations waiting to be exposed. And for that to happen, the stuff that's not great has to fall by the side as quickly as possible.\n\nThe process works, and there's a name for it: the wisdom of the crowds. The process breaks when the platform interferes with it. Then, the platform invariably declines. Does YouTube want to become a place where everything is mediocre? Because nothing can be great if nothing is bad.\n\nIn business, there's only one thing more important than 'Make it better'. And that's 'Don't fuck it up'."
+                },
+                "defaultAudioLanguage": "en"
+            },
+            "contentDetails": {
+                "duration": "PT19S",
+                "dimension": "2d",
+                "definition": "sd",
+                "caption": "true",
+                "licensedContent": "true",
+                "contentRating": {},
+                "projection": "rectangular"
+            },
+            "statistics": {
+                "viewCount": "202966282",
+                "likeCount": "10179995",
+                "dislikeCount": "225477",
+                "favoriteCount": "0",
+                "commentCount": "10960999"
+            }
+        }
+    ],
+    "pageInfo": {
+        "totalResults": 1,
+        "resultsPerPage": 1
+    }
+}
