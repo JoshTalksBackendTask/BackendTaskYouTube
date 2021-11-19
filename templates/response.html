@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/tailwind.css">
+    <title>Response</title>
+</head>
+<body>
+    <div class="lg:w-2/3 w-full mx-auto overflow-auto my-10">
+        <h1 class="text-center m-10 text-xl">
+            YouTube Data Fetched for Tag {{data[0].tag}}
+        </h1>
+        <table class="table-auto w-full text-left whitespace-no-wrap border-separate border border-black">
+          <thead>
+            <tr>
+              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl border border-black">Sr.No</th>
+              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl border border-black">Video Thumbnail</th>
+              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl border border-black">Video ID</th>
+              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 border border-black">Video Title</th>
+              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 border border-black">Description</th>
+              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 border border-black">Published At</th>
+              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 border border-black">Thumbnails</th>
+              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 border border-black">Channel Title</th>
+              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 border border-black">Views</th>
+              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 border border-black">Likes</th>
+              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 border border-black">Dislike</th>
+              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 border border-black">Comments Count</th>
+              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 border border-black">Tag</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+              {% for video in data %}
+              <tr>
+                <td class="px-4 py-3 text-base border border-black">{{loop.index}}</td>
+                <td class="px-4 py-3 text-base border border-black"><img src={{video.thumbnails.default.url}} alt=""></td>
+                <td class="px-4 py-3 text-base border border-black">{{video.videoID}}</td>
+                <td class="px-4 py-3 text-base border border-black">{{video.videoTitle}}</td>
+                <td class="px-4 py-3 text-base border border-black">{{video.description}}</td>
+                <td class="px-4 py-3 text-base border border-black">{{video.publishedAt}}</td>
+                <td class="px-4 py-3 text-base border border-black">
+                    <table class="table-auto w-full text-left whitespace-no-wrap border-separate border border-black">
+                        <thead>
+                            <tr>
+                              
+                              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl border border-black">Default Url</th>
+                              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 border border-black">Default Width</th>
+                              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 border border-black">Default Height</th>
+                              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 border border-black">Medium Url</th>
+                              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 border border-black">Medium Width</th>
+                              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 border border-black">Medium Height</th>
+                              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 border border-black">High Url</th>
+                              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 border border-black">High Width</th>
+                              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 border border-black">High Height</th>
+                              
+                              
+                            </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                <td class="px-4 py-3 text-base border border-black"><a href={{video.thumbnails.default.url}}>View</a></td>
+                                <td class="px-4 py-3 text-base border border-black">{{video.thumbnails.default.width}}</td>
+                                <td class="px-4 py-3 text-base border border-black">{{video.thumbnails.default.height}}</td>
+                                <td class="px-4 py-3 text-base border border-black"><a href={{video.thumbnails.medium.url}}>View</a></td>
+                                <td class="px-4 py-3 text-base border border-black">{{video.thumbnails.medium.width}}</td>
+                                <td class="px-4 py-3 text-base border border-black">{{video.thumbnails.medium.height}}</td>
+                                <td class="px-4 py-3 text-base border border-black"><a href={{video.thumbnails.high.url}}>View</a></td>
+                                <td class="px-4 py-3 text-base border border-black">{{video.thumbnails.high.width}}</td>
+                                <td class="px-4 py-3 text-base border border-black">{{video.thumbnails.high.height}}</td>
+                              </tr>
+                          </tbody>
+                    </table>
+                </td>
+                <td class="px-4 py-3 text-base border border-black">{{video.channelTitle}}</td>
+                <td class="px-4 py-3 text-base border border-black">{{video.views}}</td>
+                <td class="px-4 py-3 text-base border border-black">{{video.likes}}</td>
+                <td class="px-4 py-3 text-base border border-black">{{video.dislikes}}</td>
+                <td class="px-4 py-3 text-base border border-black">{{video.comments}}</td>
+                <td class="px-4 py-3 text-base border border-black">{{video.tag}}</td>
+                
+              </tr>
+              {% endfor %}
+            
+            
+          </tbody>
+        </table>
+      </div>
+</body>
+</html>
