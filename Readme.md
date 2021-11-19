@@ -48,11 +48,11 @@ You can use any API tester or even any browser and use this API.
 I have tested the same using Thunder Client and the output are.
 
 ### Index Endpoint
-![Index Request](static\images\index.PNG)
+![Index Request](static/images/index.PNG)
 ### GET fetchData endpoint
-![GET Request](static\images\get.PNG)
+![GET Request](static/images/get.PNG)
 ### POST fetchData endpoint
-![POST Request](static\images\post.PNG)
+![POST Request](static/images/post.PNG)
 </p>
 
 ## Endpoint 1 -> "/"
